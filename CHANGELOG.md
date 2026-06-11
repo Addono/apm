@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- `apm install --target kiro` deploys Kiro IDE steering, skills, hooks,
+  and MCP config to the documented `.kiro/` layout. (by @TibRib; closes #702) (#1741)
 - APM now catches accidental subpath embeds in git URLs (for example, `org/repo/skills/name.git`) and points at the supported `path:` key form. (#1740)
 - SHA-pinned dependencies now stay current automatically: `apm update` resolves the newest annotated release tag, rewrites the pin, and `apm outdated` reports drift. (#1738)
 - `apm install --target hermes` and `apm compile -t hermes` add the Hermes
