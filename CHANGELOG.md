@@ -32,6 +32,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Cursor hook integration: emit required top-level `version: 1` in `.cursor/hooks.json`.
+  Affected versions: v0.14.1-v0.20.0. Hooks were silently ignored by Cursor on those
+  versions. Run `apm install` (or `apm install --target cursor`) to repair existing
+  installations. (closes #1823) (#1840)
 - `apm update --target` help text now lists `kiro` as a valid example
   target, matching `apm install`. (#1821)
 - `apm marketplace check` no longer fails with exit 128 for entries on
